@@ -1,0 +1,39 @@
+{
+  "name": "gravatar-url",
+  "version": "0.0.0",
+  "description": "Get the URL to a Gravatar image from an email",
+  "license": "MIT",
+  "repository": "sindresorhus/gravatar-url",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "gravatar",
+    "avatar",
+    "profile",
+    "image",
+    "img",
+    "picture",
+    "pic",
+    "photo",
+    "hash",
+    "email"
+  ],
+  "dependencies": {
+    "md5-hex": "^1.0.1"
+  },
+  "devDependencies": {
+    "ava": "0.0.4"
+  }
+}
