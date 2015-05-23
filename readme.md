@@ -58,6 +58,11 @@ Values: `g`, `pg`, `r`, `x`
 Allowed [rating](https://en.gravatar.com/site/implement/images/#rating) of the image.
 
 
+## Related
+
+- [get-gravatar](https://github.com/sindresorhus/get-gravatar) - Get a Gravatar image
+
+
 ## License
 
 MIT © [Sindre Sorhus](http://sindresorhus.com)
