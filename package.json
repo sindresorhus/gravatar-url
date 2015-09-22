@@ -13,7 +13,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "node test.js"
+    "test": "xo && node test.js"
   },
   "files": [
     "index.js"
@@ -34,6 +34,7 @@
     "md5-hex": "^1.0.1"
   },
   "devDependencies": {
-    "ava": "0.0.4"
+    "ava": "0.0.4",
+    "xo": "*"
   }
 }
