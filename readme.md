@@ -26,7 +26,6 @@ gravatarUrl('sindresorhus@gmail.com', {size: 200});
 
 #### email
 
-*Required*  
 Type: `string`
 
 Email matching a Gravatar profile.
