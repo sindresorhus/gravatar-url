@@ -31,7 +31,7 @@
     "email"
   ],
   "dependencies": {
-    "md5-hex": "^1.0.1"
+    "md5-hex": "^1.1.0"
   },
   "devDependencies": {
     "ava": "*",
