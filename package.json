@@ -10,7 +10,7 @@
     "url": "sindresorhus.com"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "scripts": {
     "test": "xo && ava"
@@ -31,7 +31,7 @@
     "email"
   ],
   "dependencies": {
-    "md5-hex": "^1.1.0"
+    "md5-hex": "^2.0.0"
   },
   "devDependencies": {
     "ava": "*",
