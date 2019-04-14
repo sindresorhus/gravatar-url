@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save gravatar-url
+$ npm install gravatar-url
 ```
 
 
