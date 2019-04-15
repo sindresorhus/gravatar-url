@@ -1,7 +1,7 @@
 import {expectType, expectError} from 'tsd';
 import gravatarUrl = require('.');
 
-const options: gravatarUrl.Options = {}; // check interface export
+const options: gravatarUrl.Options = {}; // Check interface export
 expectType<string>(gravatarUrl('sindresorhus@gmail.com'));
 expectType<string>(gravatarUrl('sindresorhus@gmail.com', {default: '404'}));
 expectType<string>(gravatarUrl('sindresorhus@gmail.com', {default: 'blank'}));
