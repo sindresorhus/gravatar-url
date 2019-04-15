@@ -5,7 +5,7 @@ const md5Hex = require('md5-hex');
 const BASE_URL = 'https://gravatar.com/avatar/';
 
 module.exports = (email, options) => {
-	if (email.indexOf('@') === -1) {
+	if (!email.includes('@')) {
 		throw new Error('Please specify an email');
 	}
 

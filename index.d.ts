@@ -10,7 +10,9 @@ declare namespace GravatarUrl {
 		readonly size?: number;
 
 		/**
-		[Image](https://en.gravatar.com/site/implement/images/#default-image) to return if the email didn't match any Gravatar profile. Default: [This image](http://www.gravatar.com/avatar/00000000000000000000000000000000).
+		[Image](https://en.gravatar.com/site/implement/images/#default-image) to return if the email didn't match any Gravatar profile. Either a ustom URL or [`404`](https://gravatar.com/avatar/5cc22f8c06631cccead907acbb627b69?default=404), [`mm`](https://gravatar.com/avatar/5cc22f8c06631cccead907acbb627b69?default=mm), [`identicon`](https://gravatar.com/avatar/5cc22f8c06631cccead907acbb627b69?default=identicon), [`monsterid`](https://gravatar.com/avatar/5cc22f8c06631cccead907acbb627b69?default=monsterid), [`wavatar`](https://gravatar.com/avatar/5cc22f8c06631cccead907acbb627b69?default=wavatar), [`retro`](https://gravatar.com/avatar/5cc22f8c06631cccead907acbb627b69?default=retro), [`blank`](https://gravatar.com/avatar/5cc22f8c06631cccead907acbb627b69?default=blank).
+
+		@default 'https://gravatar.com/avatar/00000000000000000000000000000000'
 		*/
 		readonly default?: LiteralUnion<
 			'404' | 'mm' | 'identicon' | 'monsterid' | 'wavatar' | 'retro' | 'blank',
@@ -39,9 +41,9 @@ gravatarUrl('sindresorhus@gmail.com', {size: 200});
 //=> 'https://gravatar.com/avatar/d36a92237c75c5337c17b60d90686bf9?size=200'
 ```
 */
-declare function gravatarUrls(
+declare function gravatarUrl(
 	email: string,
 	options?: GravatarUrl.Options
 ): string;
 
-export = gravatarUrls;
+export = gravatarUrl;

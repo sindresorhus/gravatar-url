@@ -32,6 +32,8 @@ Email matching a Gravatar profile.
 
 #### options
 
+Type: `Object`
+
 ##### size
 
 Type: `number`<br>
@@ -43,8 +45,8 @@ Values: `1..2048`
 ##### default
 
 Type: `string`<br>
-Default: [This image](http://www.gravatar.com/avatar/00000000000000000000000000000000)<br>
-Values: Custom URL or `404`, `mm`, `identicon`, `monsterid`, `wavatar`, `retro`, `blank`
+Default: [This image](https://gravatar.com/avatar/00000000000000000000000000000000)<br>
+Values: Custom URL or [`404`](https://gravatar.com/avatar/5cc22f8c06631cccead907acbb627b69?default=404), [`mm`](https://gravatar.com/avatar/5cc22f8c06631cccead907acbb627b69?default=mm), [`identicon`](https://gravatar.com/avatar/5cc22f8c06631cccead907acbb627b69?default=identicon), [`monsterid`](https://gravatar.com/avatar/5cc22f8c06631cccead907acbb627b69?default=monsterid), [`wavatar`](https://gravatar.com/avatar/5cc22f8c06631cccead907acbb627b69?default=wavatar), [`retro`](https://gravatar.com/avatar/5cc22f8c06631cccead907acbb627b69?default=retro), [`blank`](https://gravatar.com/avatar/5cc22f8c06631cccead907acbb627b69?default=blank)
 
 [Image](https://en.gravatar.com/site/implement/images/#default-image) to return if the email didn't match any Gravatar profile.
 
