@@ -1,6 +1,6 @@
 import {LiteralUnion} from 'type-fest';
 
-declare namespace GravatarUrl {
+declare namespace gravatarUrl {
 	interface Options {
 		/**
 		[Size](https://en.gravatar.com/site/implement/images/#size) of the image. Values: `1..2048`.
@@ -43,7 +43,7 @@ gravatarUrl('sindresorhus@gmail.com', {size: 200});
 */
 declare function gravatarUrl(
 	email: string,
-	options?: GravatarUrl.Options
+	options?: gravatarUrl.Options
 ): string;
 
 export = gravatarUrl;
