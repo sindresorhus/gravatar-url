@@ -32,7 +32,7 @@ Email matching a Gravatar profile.
 
 #### options
 
-Type: `Object`
+Type: `object`
 
 ##### size
 
@@ -54,7 +54,7 @@ Values: Custom URL or [`404`](https://gravatar.com/avatar/5cc22f8c06631cccead907
 
 Type: `string`<br>
 Default: `g`<br>
-Values: `g`, `pg`, `r`, `x`
+Values: `g` `pg` `r` `x`
 
 Allowed [rating](https://en.gravatar.com/site/implement/images/#rating) of the image.
 
