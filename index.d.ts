@@ -10,7 +10,7 @@ declare namespace gravatarUrl {
 		readonly size?: number;
 
 		/**
-		[Image](https://en.gravatar.com/site/implement/images/#default-image) to return if the email didn't match any Gravatar profile. Either a ustom URL or [`404`](https://gravatar.com/avatar/5cc22f8c06631cccead907acbb627b69?default=404), [`mm`](https://gravatar.com/avatar/5cc22f8c06631cccead907acbb627b69?default=mm), [`identicon`](https://gravatar.com/avatar/5cc22f8c06631cccead907acbb627b69?default=identicon), [`monsterid`](https://gravatar.com/avatar/5cc22f8c06631cccead907acbb627b69?default=monsterid), [`wavatar`](https://gravatar.com/avatar/5cc22f8c06631cccead907acbb627b69?default=wavatar), [`retro`](https://gravatar.com/avatar/5cc22f8c06631cccead907acbb627b69?default=retro), [`blank`](https://gravatar.com/avatar/5cc22f8c06631cccead907acbb627b69?default=blank).
+		[Image](https://en.gravatar.com/site/implement/images/#default-image) to return if the identifier didn't match any Gravatar profile. Either a ustom URL or [`404`](https://gravatar.com/avatar/5cc22f8c06631cccead907acbb627b69?default=404), [`mm`](https://gravatar.com/avatar/5cc22f8c06631cccead907acbb627b69?default=mm), [`identicon`](https://gravatar.com/avatar/5cc22f8c06631cccead907acbb627b69?default=identicon), [`monsterid`](https://gravatar.com/avatar/5cc22f8c06631cccead907acbb627b69?default=monsterid), [`wavatar`](https://gravatar.com/avatar/5cc22f8c06631cccead907acbb627b69?default=wavatar), [`retro`](https://gravatar.com/avatar/5cc22f8c06631cccead907acbb627b69?default=retro), [`blank`](https://gravatar.com/avatar/5cc22f8c06631cccead907acbb627b69?default=blank).
 
 		@default 'https://gravatar.com/avatar/00000000000000000000000000000000'
 		*/
@@ -29,9 +29,11 @@ declare namespace gravatarUrl {
 }
 
 /**
-Get the URL to a Gravatar image from an email.
+Get the URL to a Gravatar image from an identifier, such as an email.
 
-@param email - Email matching a Gravatar profile.
+@param identifier - Identifier for which to get a Gravatar image, such as an email matching a Gravatar profile.
+
+@param options - The options to use.
 
 @example
 ```
@@ -42,7 +44,7 @@ gravatarUrl('sindresorhus@gmail.com', {size: 200});
 ```
 */
 declare function gravatarUrl(
-	email: string,
+	identifier: string,
 	options?: gravatarUrl.Options
 ): string;
 
