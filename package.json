@@ -1,7 +1,7 @@
 {
 	"name": "gravatar-url",
 	"version": "3.0.1",
-	"description": "Get the URL to a Gravatar image from an email",
+	"description": "Get the URL to a Gravatar image from an identifier, such as an email",
 	"license": "MIT",
 	"repository": "sindresorhus/gravatar-url",
 	"author": {
@@ -24,20 +24,19 @@
 		"avatar",
 		"profile",
 		"image",
-		"img",
 		"picture",
-		"pic",
 		"photo",
 		"hash",
-		"email"
+		"email",
+		"identifier"
 	],
 	"dependencies": {
-		"md5-hex": "^2.0.0",
-		"type-fest": "^0.3.1"
+		"md5-hex": "^3.0.1",
+		"type-fest": "^0.8.1"
 	},
 	"devDependencies": {
-		"ava": "^1.4.1",
-		"tsd": "^0.7.2",
-		"xo": "^0.24.0"
+		"ava": "^2.4.0",
+		"tsd": "^0.10.0",
+		"xo": "^0.25.3"
 	}
 }
