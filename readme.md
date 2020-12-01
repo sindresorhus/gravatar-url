@@ -1,14 +1,12 @@
-# gravatar-url [![Build Status](https://travis-ci.org/sindresorhus/gravatar-url.svg?branch=master)](https://travis-ci.org/sindresorhus/gravatar-url)
+# gravatar-url
 
 > Get the URL to a [Gravatar](https://en.gravatar.com) image from an identifier, such as an email
-
 
 ## Install
 
 ```
 $ npm install gravatar-url
 ```
-
 
 ## Usage
 
@@ -18,7 +16,6 @@ const gravatarUrl = require('gravatar-url');
 gravatarUrl('sindresorhus@gmail.com', {size: 200});
 //=> 'https://gravatar.com/avatar/d36a92237c75c5337c17b60d90686bf9?size=200'
 ```
-
 
 ## API
 
@@ -63,7 +60,6 @@ Default: `g`\
 Values: `g` `pg` `r` `x`
 
 Allowed [rating](https://en.gravatar.com/site/implement/images/#rating) of the image.
-
 
 ## Related
 
