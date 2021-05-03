@@ -1,10 +1,9 @@
-'use strict';
-const querystring = require('querystring');
-const md5Hex = require('md5-hex');
+import querystring from 'node:querystring';
+import md5Hex from 'md5-hex';
 
 const BASE_URL = 'https://gravatar.com/avatar/';
 
-module.exports = (identifier, options) => {
+export default function gravatarUrl(identifier, options) {
 	if (!identifier) {
 		throw new Error('Please specify an identifier, such as an email address');
 	}
@@ -16,4 +15,4 @@ module.exports = (identifier, options) => {
 	const query = querystring.stringify(options);
 
 	return BASE_URL + md5Hex(identifier) + (query ? `?${query}` : '');
-};
+}
