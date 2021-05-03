@@ -1,6 +1,6 @@
 {
 	"name": "gravatar-url",
-	"version": "3.1.0",
+	"version": "4.0.0",
 	"description": "Get the URL to a Gravatar image from an identifier, such as an email",
 	"license": "MIT",
 	"repository": "sindresorhus/gravatar-url",
