@@ -1,7 +1,4 @@
-import querystring from 'node:querystring';
 import md5Hex from 'md5-hex';
-
-const BASE_URL = 'https://gravatar.com/avatar/';
 
 export default function gravatarUrl(identifier, options) {
 	if (!identifier) {
@@ -12,7 +9,9 @@ export default function gravatarUrl(identifier, options) {
 		identifier = identifier.toLowerCase().trim();
 	}
 
-	const query = querystring.stringify(options);
+	const baseUrl = new URL('https://gravatar.com/avatar/');
+	baseUrl.pathname += md5Hex(identifier);
+	baseUrl.search = new URLSearchParams(options);
 
-	return BASE_URL + md5Hex(identifier) + (query ? `?${query}` : '');
+	return baseUrl.toString();
 }
