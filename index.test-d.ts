@@ -7,7 +7,7 @@ expectType<string>(gravatarUrl('sindresorhus@gmail.com', {default: 'blank'}));
 expectType<string>(
 	gravatarUrl('sindresorhus@gmail.com', {default: 'identicon'})
 );
-expectType<string>(gravatarUrl('sindresorhus@gmail.com', {default: 'mm'}));
+expectType<string>(gravatarUrl('sindresorhus@gmail.com', {default: 'mp'}));
 expectType<string>(
 	gravatarUrl('sindresorhus@gmail.com', {default: 'monsterid'})
 );
