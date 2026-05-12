@@ -9,9 +9,16 @@ export default function gravatarUrl(identifier, options) {
 		identifier = identifier.toLowerCase().trim();
 	}
 
+	const search = new URLSearchParams();
+	for (const [key, value] of Object.entries(options)) {
+		if (value !== null && value !== undefined) {
+			search.set(key, value);
+		}
+	}
+
 	const baseUrl = new URL('https://gravatar.com/avatar/');
 	baseUrl.pathname += md5Hex(identifier);
-	baseUrl.search = new URLSearchParams(options);
+	baseUrl.search = search;
 
 	return baseUrl.toString();
 }
