@@ -4,8 +4,8 @@
 
 ## Install
 
-```
-$ npm install gravatar-url
+```sh
+npm install gravatar-url
 ```
 
 ## Usage
